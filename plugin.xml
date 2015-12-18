@@ -35,10 +35,8 @@
         <source-file src="src/android/com/mobileapptracking/gaidwrapper/GAIDWrapperPlugin.java"
                      target-dir="src/com/mobileapptracking/gaidwrapper" />
 
-        <!-- <framework src="com.google.android.gms:play-services-ads:+" /> -->
+        <framework src="com.google.android.gms:play-services-ads:+" />
     </platform>
-
-    <dependency id="com.google.playservices" url="https://github.com/MobileChromeApps/google-play-services" commit="master" />
     
     <platform name="ios">
         <!-- Cordova < 2.3 -->
