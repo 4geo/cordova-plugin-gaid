@@ -1,18 +1,17 @@
 {
-  "name": "cordova-plugin-tune",
-  "version": "4.1.0",
-  "description": "This Cordova plugin allows you to measure installs and events with the TUNE SDK.",
+  "name": "com.mobileapptracking.gaidwrapper",
+  "version": "1.1.0",
+  "description": "",
   "cordova": {
-    "id": "cordova-plugin-tune",
+    "id": "com.mobileapptracking.gaidwrapper",
     "platforms": [
       "android",
-      "ios",
-      "wp8"
+      "ios"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MobileAppTracking/phonegap-plugin.git"
+    "url": "git+https://github.com/4geo/cordova-plugin-gaid.git"
   },
   "keywords": [
     "cordova",
@@ -32,11 +31,5 @@
       "name": "cordova",
       "version": ">=3.0.0"
     }
-  ],
-  "author": "John Gu",
-  "license": "Apache 2.0",
-  "bugs": {
-    "url": "https://github.com/MobileAppTracking/phonegap-plugin/issues"
-  },
-  "homepage": "https://github.com/MobileAppTracking/phonegap-plugin#readme"
+  ]
 }
