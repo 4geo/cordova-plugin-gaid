@@ -3,25 +3,21 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="com.mobileapptracking.gaidwrapper"
-        version="1.0.1">
+        version="1.1.0">
 
     <name>GAIDWrapperPlugin</name>
 
     <description>This plugin allows you to access the Google Advertising ID from Google Play Services</description>
-    <repo>https://github.com/MobileAppTracking/phonegap-plugin.git</repo>
+    <repo>https://github.com/4geo/cordova-plugin-gaid.git</repo>
     <keywords>cordova,mat,mobileapptracking,tracking,gaid</keywords>
     <license>Apache 2.0</license>
 
-    <engines>
-        <engine name="cordova" version=">=3.0.0" />
-    </engines>
-
-    <js-module src="www/GAIDWrapperPlugin.js" name="GAIDWrapperPlugin">
-        <clobbers target="window.plugins.gaidWrapperPlugin" />
-    </js-module>
-
     <!-- android -->
     <platform name="android">
+        <js-module src="www/GAIDWrapperPlugin.js" name="GAIDWrapperPlugin">
+            <clobbers target="window.plugins.gaidWrapperPlugin" />
+        </js-module>
+
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="GAIDWrapperPlugin" >
                 <param name="android-package" value="com.mobileapptracking.gaidwrapper.GAIDWrapperPlugin" />
@@ -35,13 +31,14 @@
         <source-file src="src/android/com/mobileapptracking/gaidwrapper/GAIDWrapperPlugin.java"
                      target-dir="src/com/mobileapptracking/gaidwrapper" />
 
-        <framework src="com.google.android.gms:play-services-ads:+" />
     </platform>
-
-    <!-- <dependency id="com.google.playservices" url="https://github.com/MobileChromeApps/google-play-services" commit="master" /> -->
 
     <platform name="ios">
         <!-- Cordova < 2.3 -->
+        <js-module src="www/GAIDWrapperPlugin.js" name="GAIDWrapperPlugin">
+            <clobbers target="window.plugins.gaidWrapperPlugin" />
+        </js-module>
+
         <plugins-plist key="GAIDWrapperPlugin" string="GAIDWrapperPlugin" />
 
         <config-file target="config.xml" parent="/*">
