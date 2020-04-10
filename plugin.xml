@@ -31,6 +31,7 @@
         <source-file src="src/android/com/mobileapptracking/gaidwrapper/GAIDWrapperPlugin.java"
                      target-dir="src/com/mobileapptracking/gaidwrapper" />
 
+        <framework src="com.google.android.gms:play-services-ads:15.0.1" />
     </platform>
 
     <platform name="ios">
